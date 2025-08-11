@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Estilos para os modelos de caixas */
+        .caixa {
+            border: 1px solid #ccc;
+            padding-top: 16px;
+            padding-left: 16px;
+            padding-bottom: 16px;
+            padding-right: 16px;
+            margin: auto; /* Para deixar a margem automática e no centro */
+            border-radius: 8px;
+
+            /* SIMPLIFICANDO BORDER, PADDING E MARGIN */
+            border: 1px solid #ccc; /*ORDEM: ESPESSURA, ESTILO E COR  */
+            padding: 16px; /*ORDEM: OU INFORMA UM UNICO VALOR PARA TODOS, OU A SEQUENCIA É, CIMA, DIREITA, BAIXO, ESQUERDA, QUANDO COLOCA SÓ DOIS VALORES, FICA O DE CIMA E DEBAIXO IGUAIS AO PRIMEIRO VALOR, E O DA DIREITA E ESQUERDA IGUAIS AO SEGUNDO VALOR */
+            margin: auto; /*ORDEM: É OS 4 IGUAL O PADDING, SÓ QUE A GENTE PODE COLOCAR POR EXEMPLO, 20px auto 10px auto, PARA QUE ELE FIQUE CENTRALIZADA NO NAVEGADOR. */
+            outline: 5px dashed salmon; /*ORDEM: ESPESSURA, ESTILO E COR */
+
+            /* display: inline; inline faz com que a div se comporte como uma span, ou seja, ela só ocupa o espaço necessário para o conteúdo, mas mantém as características de uma div */
+        }
+
+        .caixa .titulo {
+            font-size: 24px;
+            margin-bottom: 8px;
+            background-color: orange;
+        }
+
+        .caixa .conteudo {
+            font-size: 16px;
+            background-color: greenyellow;
+        }
+
+        .caixa .conteudo > p {
+            text-decoration: underline;
+        }
+
+        /*A diferença de uma box level <div> para a inline level <span> é que a box level ocupa toda a largura disponível, enquanto a inline level ocupa apenas o espaço necessário para o conteúdo.*/
+        /*O box levels são, div, h1 até h6, p, main, header, nav, article, aside, footer, form, video*/
+        /*Os inline levels são, span, a, code, small, strong, em, sup e sub, label, button, input, select*/
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <div class="titulo">Título da Caixa</div>
+        <div class="conteudo">Conteúdo da Caixa
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem harum aliquid assumenda, sunt dolorem modi esse nulla est, enim incidunt quibusdam sint nesciunt totam labore et neque commodi voluptatum illo.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quae reiciendis soluta eum vel modi in natus quis <a href="#" style="font-weight: bold;">laborum fuga expedita doloremque dicta voluptate, cum iusto.</a> Obcaecati ipsa, nihil fugiat?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8 */
+
+* { /* Seleciona todos os elementos da página */
+    /* height: 100%; */ /* (Comentado) Definiria altura de todos os elementos como 100% */
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial ou sans-serif */
+}
+
+body {
+    background-image: linear-gradient(-45deg, #F29F05 80%, #F23030); /* Aplica um degradê de fundo na diagonal */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da janela */
+}
+
+main {
+    width: 600px; /* Define a largura fixa da área principal */
+    border-radius: 20px; /* Arredonda os cantos do main */
+    box-shadow: 5px 5px 15px #F23030; /* Adiciona sombra ao redor do main */
+    padding: 10px; /* Espaçamento interno de 10px */
+    margin: auto; /* Centraliza o main horizontalmente */
+    background-color: #267365; /* Cor de fundo do main */
+}
+
+p {
+    text-align: justify; /* Justifica o texto dos parágrafos */
+    color: white; /* Define a cor do texto como branco */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Define uma lista de fontes para os parágrafos */
+}
+
+h1 {
+    color: #F28705; /* Define a cor do texto do h1 */
+    text-align: center; /* Centraliza o texto do h1 */
+}
+
+h2 {
+    color: #F28705; /* Define a cor do texto do h2 */
+    text-align: left; /* Alinha o texto do h2 à esquerda */
+}

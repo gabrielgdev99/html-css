@@ -1,0 +1,34 @@
+HTML = CONTEUDO (TEXTO, IMAGENS, VIDEOS, TABELA)
+CSS = DESIGN (CORES, SOMBRAS, TAMANHOS E POSICIONAMENTO)
+JS = INTERACOES (MENUS, ANIMACOES, POPUP, VALIDACOES)
+
+
+ESTRUTURA BASICA DE DOCUMENTO HTML
+<!DOCTYPE html>
+
+NO CSS - TODO CODIGO TEM 1 SELETOR, E EXISTEM DECLARACOES E CADA DECLARACAO TEM UMA PROPRIEDADE E UM VALOR.
+
+
+MODULO 1 - CAPITULO 03 - AULA 01
+
+<!-- TODA ESTRUTURA BASICA DE UM DOCUMENTO HTML5 -->
+
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-br"> <!-- Início do documento HTML e definição do idioma -->
+    <head> <!-- Cabeçalho  -->
+        <meta charset="UTF-8"> <!-- Definição da codificação de caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração para responsividade -->
+        <title>Curso em Video - HTML5 e CSS3</title> <!-- Título da página -->
+        <!-- <link rel="stylesheet" href="style.css"> Link para o arquivo CSS externo -->
+    </head> <!-- Fim do cabeçalho -->
+
+    <body> <!-- Corpo do documento -->
+        <h1>Testando HTML5 e CSS3</h1> <!-- Cabeçalho principal -->
+        <p>Isso é um parágrafo</p> <!-- Parágrafo de texto -->
+        <img src="Teste (2).png" alt="Descrição da imagem"> <!-- Imagem com texto alternativo -->
+    </body> <!-- Fim do corpo do documento -->
+
+</html> <!-- Fim do documento HTML -->
+
+PARA CRIAR AUTOMATICAMENTE ESSA ERSTRUTURA UTILIZAR O ! E ENTER QUE JA CRIA AUTOMATICAMENTE
+

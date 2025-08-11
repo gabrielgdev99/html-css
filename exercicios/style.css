@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Site do google das fontes é GOOGLE FONTS */
+
+@font-face {
+    font-family: 'Vampire';
+    src: url(fonts/Vampire\ Wars.otf) format(opentype), url(fonts/Vampire\ Wars.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+
+    /* Tipos de format ()
+     - opentype (otf)
+     - truetype (ttf)
+     - webfont (woff)
+     - embedded-opentype (eot)
+     - svg (svg) 
+     - truetype-aat (Apple Advanced Typography)*/
+}
+/* Desta forma acima é como se importa um arquivo de fonte. */
+
+
+
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+    /*
+    Medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas relativas
+    em, ex, rem, vw, vh, %
+
+    Vamos usar a px e em.
+    */
+    /* font-size: 16px; Geralmente usasse o 16px como padrao */
+    /* font-weight: bold; normal, bold, bolder, lighter */
+    /* font-style: italic; normal, italic, oblique */
+    /* text-decoration: underline; none, underline, overline, line-through */
+    /* shorthand é font
+    que combina font-style -> font-weight -> font-size -> font-family */
+    font: italic bold 16px Arial, Helvetica, sans-serif;
+    /* O shorthand pode funcionar se vc nao colocar uma das propriedades. */
+
+}
+
+h1 {
+    font: lighter 32px 'Vampire', sans-serif;
+}
+

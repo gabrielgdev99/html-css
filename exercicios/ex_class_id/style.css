@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id e em CSS é #. Pode ser colocado id e class no mesmo elemento.
+    em HTML é class e em CSS é. o Class funciona em qualquer texto do HTML, independente se foi colocado em uma tag ou não e tbm pode ser colocado mais de um class em um mesmo elemento.
+
+    em um documento HTML só pode ser usado uma vez o ID.
+*/ 
+
+
+body {
+    font: normal 16px Arial, Verdana, sans-serif;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1#principal {
+    text-align: center;
+    color: blueviolet;
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.basico {
+    color: darkcyan;
+    background-color: lightgray;
+}
+
+.teste.do.class {
+    color: darkorange;
+    background-color: lightyellow;
+}
+
+.negrito {
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}

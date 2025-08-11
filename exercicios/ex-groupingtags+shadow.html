@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            min-height: 100vh;
+            background-image: linear-gradient(-45deg, #F29F05 80%, #F23030);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 5px;
+            display: inline-block;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+        }
+
+        nav > ul > li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            background-color: black;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1px;
+            background-color: black;
+            color: white;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Bem-vindo ao meu site</h2>
+            <p>Este é um exemplo de uso de tags de agrupamento em HTML.</p>
+            <p>As tags de agrupamento ajudam a organizar o conteúdo da página.</p>
+        </section>
+        <section id="noticias">
+            <h2>Últimas Notícias</h2>
+            <article>
+                <h3>Notícia 1</h3>
+                <p>Descrição da notícia 1.</p>
+            </article>
+            <article>
+                <h3>Notícia 2</h3>
+                <p>Descrição da notícia 2.</p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p style="color: white;">Desenvolvido por Gabriel Gonçalves</p>
+    </footer>
+</body>
+</html>

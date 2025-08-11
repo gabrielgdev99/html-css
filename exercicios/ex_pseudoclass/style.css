@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+div {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: beige;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+}
+
+div:hover { /* quando o mouse passa por cima */
+    background-color: #F23030;
+    color: white;
+}
