@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Noticias</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>INTERIOR NOTICIAS</h1>
+    </header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <nav id="itens">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Saiba Mais</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <article>
+            <h2>Noticia 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus saepe minus atque nisi! Quas earum nam similique corporis aliquam at illum sapiente aperiam ipsa. Illum omnis beatae natus nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minima consequuntur ratione, aperiam optio nesciunt et nostrum assumenda nemo explicabo tempore possimus commodi adipisci repellendus quos corporis atque vitae animi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quam accusantium, saepe in dolore quas odio beatae culpa dolor iure tempore eveniet voluptates unde et eum, laudantium, aliquid distinctio quasi!</p>
+            <h2>Noticia 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis placeat a blanditiis qui totam sint ipsam rem iure. Sit rerum quaerat nostrum rem esse ipsum aperiam cumque earum eos? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem harum quos doloribus rerum quibusdam enim! Excepturi, odit temporibus. Aliquid porro illum molestiae delectus rem repellendus debitis praesentium iure, deserunt mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi et minus veritatis id ipsa officia beatae minima, sunt similique aliquid magni ab sint necessitatibus maxime quis voluptates porro saepe!</p>
+        </article>
+        
+    </main>
+
+    <script>
+  function clickMenu() {
+    const lista = document.querySelector('#itens > ul');
+    lista.style.display = (lista.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+    
+</body>
+</html>
