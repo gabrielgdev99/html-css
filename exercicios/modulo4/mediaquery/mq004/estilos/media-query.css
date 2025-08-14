@@ -15,6 +15,21 @@ Grandes telas: acima de 1200px
     body {
         background-image: url(../imgs/back-print.jpg);
     }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: "Essa impressao foi feita atraves do site www.cursoemvideo.com";
+        text-decoration: overline;
+    }
+
+    main > h1 {
+        text-shadow: none;
+        color: black;
+    }
     
     img#phone {display: none;}
     img#tablet {display: none;}
