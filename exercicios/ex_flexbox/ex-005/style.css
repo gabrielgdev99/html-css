@@ -9,7 +9,7 @@ container.bigbox {
     background-color: rgba(0, 0, 0, 0.384);
     display: flex;
     /* SE QUEBRAR, ELE VAI NO SENTIDO DO CROSS-AXIS */
-    flex-flow: column wrap; /* s/ necessidade */
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
