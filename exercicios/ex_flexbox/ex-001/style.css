@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+container.bigbox {
+    background-color: black;
+    display: flex;
+    border-radius: 5px;
+}
+
+div.box {
+    height: 50px;
+    flex: auto;
+    background-color: white;
+    margin: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+p {
+    background-color: rgb(230, 6, 6);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 1px;
+}
+
