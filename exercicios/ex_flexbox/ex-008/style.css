@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+div.container {
+    background-color: lightcoral;
+    display: flex;
+    height: 200px;
+    flex-flow: row wrap;
+}
+
+div.item {
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    align-content: center;
+}
+
+div#i1 {
+    align-self: center;
+}
+
+div#i2 {
+    align-self: flex-start;
+}
+
+div#i3 {
+    align-self: flex-end;
+}

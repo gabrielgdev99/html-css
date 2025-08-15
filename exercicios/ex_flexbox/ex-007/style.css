@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* 
+TODO ITEM DENTRO DE CONTAINER FLEX VAI SER ORDER:0
+
+ORDER É ORDEM QUE OS ELEMENTOS APARECEM NO CONTAINER (SÓ APLICAR A FUNCAO ORDER, QUE VAI ORDENAR PELO NUMERO CRESCENTE)
+
+ALIGN-SELF FUNCIONA NO CROSS-AXIS
+
+ALIGN-SELF: AUTO - HERDA O ALINHAMENTO DO PAI
+ALIGN-SELF: FLEX-START - GRUDADO NO CROSS-START
+ALIGN-SELF: FLEX-END - GRUDADO NO CROSS-END
+ALIGN-SELF: CENTER - COLOCA NO MEIO
+ALIGN-SELF: STRETCH - ESTICA PARA OCUPAR O TOTAL DA AREA
+
+ESSA CONFIGURACAO DA PARA FAZER POR ID DO ITEM
+
+*/
+
+div.container {
+    background-color: lightcoral;
+    display: flex;
+    height: 200px;
+    flex-flow: row wrap;
+}
+
+div.item {
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    align-content: center;
+}
+
+div#i1 {
+    align-self: center;
+}
+
+div#i2 {
+    align-self: flex-start;
+}
+
+div#i3 {
+    align-self: flex-end;
+}
