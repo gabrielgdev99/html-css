@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div.container {
+    display: grid;
+    grid-template-columns: auto auto auto; /* ESSA CONFIG QUER DIZER QUE O GRID VAI TER 3 COLUNAS, E O AUTO QUER DIZER QUE TODOS VAO TER O MESMO TAMANHO */
+    grid-template-rows: 100px 100px 100px; /* TAMANHO DAS LINHAS */
+    height: 500px;
+    border: 2px solid blue;
+    gap: 20px; /*ESPAÇAMENTO ENTRE OS ITENS*/
+    align-items: center; /*ALINHAMENTO VERTICAL DOS ITENS*/
+    justify-items: center; /*ALINHAMENTO HORIZONTAL DOS ITENS*/
+    align-content: center; /*ALINHAMENTO VERTICAL DOS CONTEUDOS*/ /* ESSE TEM SPACE-BETWEEN, SPACEC-AROUND E SPACE-EVENLY*/
+    justify-content: center; /*ALINHAMENTO HORIZONTAL DOS CONTEUDOS*/ /* ESSE TEM SPACE-BETWEEN, SPACEC-AROUND E SPACE-EVENLY*/
+
+    /*ITEMS SAO OS ITENS QUE ESTAO DENTRO DOS ITENS
+    CONTENT E A POSICAO DO CONJUNTO DOS ITENS USANDO O CONTAINER PAI DE REFERENCIA
+    O CONTENT SO VAI FUNCIONAR SE O CONTAINER PAI FOR MAIOR DO QUE O CONTEUDO DENTRO
+    */
+}
+
+div.item {
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    align-content: center;
+    text-align: center;
+}
