@@ -1,11 +1,44 @@
 @charset "UTF-8";
 
+/*
+FLEX-BASIS: AUTO - SEMPRE VEM ASSIM, O TAMANHO QUER DIZER QUE É DITADO PELO TAMANHO DO CONTEUDO
 
-div.container {
+FLEX-BASIS: 200PX (EXEMPLO) - DETERMINA O TAMANHO DO ELEMENTO FIXO
+
+A IDEIA É USAR O FLEX-BASIS AO INVES DE WIDTH NO ELEMENTO - ESSA FLEX-BASIS NUNCA É UMA MEDIDA EXATA.
+
+TEM TAMBEM O FLEX-GROW: 0 E O FLEX-SHRINK: 1 (ESSES SAO OS VALORES PADROES)
+O 0 QUER DIZER QUE NAO PODE EXECUTAR A ACAO, EX: GROW:0 QUER DIZER QUE NAO PODE CRESCER
+O 1 QUER DIZER QUE PODE EXECUTAR A ACAO, EX: SHRINK:1 QUER DIZER QUE PODE ENCOLHER
+
+O VALOR INFORMADO É USADO COMO PARAMETRO PARA REDUÇAO OU AUMENTO.
+
+SE QUISER QUE OS ELEMENTOS FIQUEM COM RESPONSIVIDADE TOTAL, MANTER OS 2 COM O VALOR DE 1.
+
+
+PROPRIEDADE FLEX
+
+        FLEX-GROW - FLEX-SHRINK + FLEX-BASIS
+FLEX:       0           1           150PX
+
+MAIS TRADICIONAIS
+
+FLEX: 0 1 AUTO (VALOR PADRAO)
+FLEX: INITIAL (MESMA COISA DO PRIMEIRO)
+FLEX: 0 0 AUTO (DEIXA OS ELEMENTOS NAO FLEXIVEIS, VAI DEPENDER DO CONTEUDO)
+FLEX: NONE (MESMA COISA DO DE CIMA)
+FLEX: 1 1 AUTO (DEIXO OS ELEMENTOS FLEXIEIS E O QUE DETERMINA O TAMANHO É O CONTEUDO)
+FLEX: AUTO (MESMA COISA DO DE CICMA)
+FLEX: qualquer valor (por exemplo>3 quer dizer que o flex-grow vai ser 3)
+FLEX: 3 1 AUTO (MESMA COISA DO DE CIMA)
+
+*/
+
+div.container1, div.container2, div.container3 {
     background-color: lightcoral;
     display: flex;
-    height: 200px;
-    flex-flow: row wrap;
+    height: 50px;
+    flex-flow: row nowrap;
 }
 
 div.item {
@@ -15,16 +48,34 @@ div.item {
     padding: 10px;
     margin: 2px;
     align-content: center;
+    flex:auto;
+    flex-basis: 150px;
 }
 
-div#i1 {
-    align-self: center;
+div#i1, div#i3, div#i4 {
+    flex: 0 1;
 }
 
 div#i2 {
-    align-self: flex-start;
+    flex: 1 0;
 }
 
-div#i3 {
-    align-self: flex-end;
+div#i5 {
+    flex: 2 0;
+}
+
+div#i6 {
+    flex: 1 2;
+}
+
+div#i7 {
+    flex: 1 1;
+}
+
+div#i8 {
+    flex: 2 1;
+}
+
+div#i9 {
+    flex: 0 2;
 }
