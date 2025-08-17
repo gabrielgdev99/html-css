@@ -65,5 +65,5 @@ div.item3 {
     grid-row-end: -1;
     grid-column-start: 2;
     grid-column-end: 5; */
-    grid-area: 2 / 2 / -1 / 5; /* SHORTHAND DE ROW-COLUMN, SEGUINDO A ORDEM DE ROW START COLUMN START, ROW END E COLUMN END*/
+    grid-area: 2 / 2 / -1 / 5; /* SHORTHAND DE GRID-AREA, SEGUINDO A ORDEM DE ROW START COLUMN START, ROW END E COLUMN END*/
 }
