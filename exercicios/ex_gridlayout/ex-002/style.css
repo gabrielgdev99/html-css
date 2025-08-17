@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+div.container {
+    display: grid;
+    border: 2px solid blue;
+ 
+    grid-template: repeat(3, 100px) / repeat(4, 1fr); /*SE MUDAR A QTD DE FRACAO POR COLUNA ELE NAO PODE SER USADO REPEAT */
+    grid-auto-rows: 50px;  
+    grid-auto-columns: 100px;
+    grid-auto-flow: row; /*É AONDE O GRID VAI COLOCAR UM NOVO ELEMENTO* POR PADRAO É ROW */
+    place-items: normal normal; 
+    place-content: normal normal; 
+
+}
+
+/*PROPRIEDADES PARA ITENS NO GRID LAYOUT
+GRID-ROW-START
+GRID-ROW-END
+GRID-COLUMN-START
+GRID-COLUMN-END
+*/
+
+div.item1 {
+    border: 2px solid red;
+    align-content: center;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+div.item2 {
+    border: 2px solid red;
+    align-content: center;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+div.item3 {
+    border: 2px solid red;
+    align-content: center;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
