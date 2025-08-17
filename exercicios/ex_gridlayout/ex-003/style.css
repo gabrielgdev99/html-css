@@ -24,13 +24,13 @@ GRID-COLUMN-END
 div.item1 {
     display: grid;
     border: 2px solid red;
-    grid: 100px / 1fr 2fr;
+    grid: 32% 73% / 1fr;
     align-content: center;
     text-align: center;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: -1;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 2;
 }
 
 div.conteudo {
@@ -44,10 +44,10 @@ div.item2 {
     border: 2px solid red;
     align-content: center;
     text-align: center;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
 div.item3 {
@@ -55,7 +55,7 @@ div.item3 {
     align-content: center;
     text-align: center;
     grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 2;
     grid-column-end: 5;
 }
