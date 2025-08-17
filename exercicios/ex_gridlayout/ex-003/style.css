@@ -21,16 +21,22 @@ GRID-COLUMN-START
 GRID-COLUMN-END
 */
 
+/* 
+SPAN - É A QTD DE EXPANSOES QUE UM ELEMENTO PODE TER, POR EXEMPLO, GRID-ROW-START 1, COM GRID-ROW-END: SPAN 3, QUER DIZER QUE O ELEMENTO COMEÇA NA LINHA 1 E SE EXPANDE 3X, TERMINANDO ASSIM NA LINHA 4. FUNCIONA TAMBÉM NA COLUMN
+GRID-ROW - SIMPLIFICA O GRID-ROW-START E GRID-ROW-END > GRID-ROW: 1 / 4 (COMEÇA NA LINHA 1 E VAI ATÉ A 4, DA PARA USAR O SPAN TBM)
+GRID-COLUMN - SIMPLIFICA O GRID-COLUMN-START E O GRID-COLUMN-END DA MESMA FORMA COMO O GRID-ROW.
+GRID-AREA
+*/
+
 div.item1 {
     display: grid;
     border: 2px solid red;
     grid: 32% 73% / 1fr;
     align-content: center;
     text-align: center;
-    grid-row-start: 1;
-    grid-row-end: -1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    /* APLICANDO OS SHORTHAND */
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
 }
 
 div.conteudo {
@@ -44,18 +50,20 @@ div.item2 {
     border: 2px solid red;
     align-content: center;
     text-align: center;
+    /* APLICANDO O SPAN */
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: span 3;
 }
 
 div.item3 {
     border: 2px solid red;
     align-content: center;
     text-align: center;
-    grid-row-start: 2;
+    /* grid-row-start: 2;
     grid-row-end: -1;
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 5; */
+    grid-area: 2 / 2 / -1 / 5; /* SHORTHAND DE ROW-COLUMN, SEGUINDO A ORDEM DE ROW START COLUMN START, ROW END E COLUMN END*/
 }
